@@ -12,16 +12,15 @@
             <div class="experience__item">
             {{ end }}
                 <div class="experience__header">
-                    <h3 class="experience__company">
+                    <h3 class="experience__position">
                         {{ .Role | safeHTML }}
                     </h3>
-                    <h3 class="experience__place">{{ .Employer | safeHTML }}</h3>
+                    <h3 class="experience__company">{{ .Employer | safeHTML }}</h3>
                 </div>
                 {{ range .Positions }}
                 <div class="experience__job">
                     <div class="experience__subheader">
                         <h3 class="experience__position">
-                            {{ .Role | safeHTML}}
                             {{ .Title| safeHTML}}
                         </h3>
                         <h3 class="experience__date">{{ .Date | safeHTML }}</h3>
